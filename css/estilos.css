@@ -121,11 +121,10 @@ img{
 
 @media (min-width:0px) and (max-width: 395px){
     main{
-    padding: 0 auto;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 184px 184px;
-    grid-template-rows: 184px 184px 184px 184px 184px 184px 184px 184px;
+    grid-template-columns: 177px 177px;
+    grid-template-rows: 180px 180px 180px 180px 180px 180px 180px 180px;
     gap: 0.5rem;
     grid-template-areas:
         "celda-a celda-a"
