@@ -1,0 +1,111 @@
+main{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px;
+    gap: 1rem;
+    grid-template-areas:
+        "celda-a celda-a celda-b celda-b celda-d celda-d celda-d"
+        "celda-a celda-a celda-b celda-b celda-d celda-d celda-d"
+        "celda-c celda-c celda-b celda-b celda-e celda-f celda-g";
+}
+
+h1{
+    background: linear-gradient(to right, #a538ee, #6231b1);
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, #c582f1, #a071ec);
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.general-border{
+    border: 2px solid bisque;
+}
+
+.celda-a{
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+    grid-area: celda-a;
+}
+
+.celda-b{
+    grid-row: 1 / 4;
+    grid-column: 3 / 5;
+    grid-area: celda-b;
+}
+
+.celda-c{
+    grid-row: 3 / 4;
+    grid-column: 1 / 3;
+    grid-area: celda-c;
+}
+
+.celda-d{
+    grid-row: 1 / 3;
+    grid-column: 5 / 8;
+    grid-area: celda-d;
+}
+
+.celda-e{
+    grid-row: 3 / 4;
+    grid-column: 5 / 6;
+    grid-area: celda-e;
+}
+
+.celda-f{
+    grid-row: 3 / 4;
+    grid-column: 6 / 7;
+    grid-area: celda-f;
+}
+
+.celda-g{
+    grid-row: 3 / 4;
+    grid-column: 7 / 8;
+    grid-area: celda-g;
+}
+
+@media (min-width : 890px) and (max-width: 1500px){
+    main{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px;
+    gap: 1rem;
+    grid-template-areas:
+        "celda-a celda-a celda-b celda-b celda-e celda-e"
+        
+        "celda-g celda-g celda-b celda-b celda-d celda-d"
+        
+        "celda-g celda-g celda-b celda-b celda-d celda-d"
+        
+        "celda-c celda-c celda-c celda-c celda-f celda-f";
+    }
+}
+
+@media (max-width: 890px){
+    main{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px;
+    gap: 1rem;
+    grid-template-areas:
+        "celda-a celda-a celda-d celda-d"
+        
+        "celda-g celda-g celda-b celda-b"
+        
+        "celda-f celda-e celda-b celda-b"
+        
+        "celda-c celda-c celda-c celda-c";
+    }
+}
