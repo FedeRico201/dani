@@ -109,3 +109,29 @@ img{
         "celda-c celda-c celda-c celda-c";
     }
 }
+
+@media (max-width: 390px){
+    main{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px 200px 200px;
+    gap: 1rem;
+    grid-template-areas:
+        "celda-a celda-a"
+        
+        "celda-g celda-g"
+        
+        "celda-f celda-e"
+        
+        "celda-c celda-c"
+        
+        "celda-d celda-d"
+
+        "celda-b celda-b"
+        
+        "celda-b celda-b"
+        
+        "celda-b celda-b";
+    }
+}
